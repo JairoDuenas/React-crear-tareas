@@ -1,6 +1,6 @@
 import React from "react";
 import './TodoCounter.css';
-import logo from "../statics/logo.png"
+import logo from "../../statics/logo.png"
 
 function TodoCounter({ totalTodos, completedTodos, loading }) {
   return (
