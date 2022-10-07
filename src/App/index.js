@@ -21,14 +21,14 @@ function App() {
     loading,
     searchedTodos,
     totalTodos, 
-    completeTodo,
     completedTodos,
     openModal,
     searchValue, 
   } = states;
-
+  
   const {
     setOpenModal,
+    completeTodo,
     addTodo,
     deleteTodo,
     setSearchValue,
