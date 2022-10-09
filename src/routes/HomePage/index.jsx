@@ -67,6 +67,7 @@ return (
           text={todo.text}
           completed={todo.completed}
           onComplete={() => completeTodo(todo.text)}
+          onEdit={() => console.log('editar todo')}
           onDelete={() => deleteTodo(todo.text)}
         />
       )}
