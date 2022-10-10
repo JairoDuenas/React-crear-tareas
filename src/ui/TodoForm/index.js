@@ -1,7 +1,6 @@
 import { Button, Stack, TextField, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import AddTaskIcon from '@mui/icons-material/AddTask';
 import './TodoForm.css';
 
 function TodoForm(props) {
@@ -17,8 +16,8 @@ function TodoForm(props) {
   }
   const onSubmit = (event) => {
     event.preventDefault();
-    navigate('/');
     props.submitEvent(newTodoValue);
+    navigate('/');
   }
   return (
     <Stack
@@ -72,7 +71,7 @@ function TodoForm(props) {
           variant="contained"
           color="success"
           size="large"
-          endIcon={<AddTaskIcon />}          
+          endIcon={props.submitIcon}          
         >
           {props.submitText}
         </Button>
