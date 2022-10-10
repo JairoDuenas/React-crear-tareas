@@ -1,11 +1,12 @@
 import React from "react";
-import './TodosLoading.css';
+import Box from '@mui/material/Box';
+import LinearProgress from '@mui/material/LinearProgress';
 
 function TodosLoading() {
   return (
-    <div className="LoadingTodo-container">
-      <div className="LoadingTodo-louder"></div>
-    </div>
+    <Box sx={{ width: '100%' }}>
+      <LinearProgress />
+    </Box>
   );
 }
 
