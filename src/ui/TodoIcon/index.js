@@ -7,6 +7,7 @@ import './TodoIcon.css';
 const iconTypes = {
   "check": color => (
     <TaskAltIcon
+      sx={{marginRight: '20px'}}
       fontSize='large'
       className="Icon-svg Icon-svg--check"
       fill={color} />
