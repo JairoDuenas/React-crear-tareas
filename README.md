@@ -1,3 +1,11 @@
+# Proyecto del Curso React.JS, navegación con React Router, deploy en Vercel
+![Captura de next optimizacion y deploy](.readme-static/Captura-react-crear-tareas.png)
+
+# Deploy en Vercel
+[Ver la app en producción]()
+
+### [Ir a Vercel](https://vercel.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
