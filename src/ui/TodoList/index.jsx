@@ -1,11 +1,21 @@
+import { List, ListSubheader } from "@mui/material";
 import React from "react";
-import "./TodoList.css";
 
 function TodoList(props) {
   const renderFunc = props.children || props.render;
 
   return (
-    <section className="TodoList-container">
+    <List
+      className="TodoList-container"
+      component='nav'
+      aria-labelledby="nested-list-subheader"
+      subheader={
+        <ListSubheader component="div" id="nested-list-subheader">
+          Lista de tareas
+        </ListSubheader>
+      }
+      sx={{widt: '100%'}}
+    >
       {props.error && props.onError()}
       {props.loading && props.onLoading()}
 
@@ -16,11 +26,7 @@ function TodoList(props) {
 
       {(!props.loading && !props.error) && props.searchedTodos.map(renderFunc)}
       
-      {/* <ul>
-        {props.children}
-      </ul> */}
-      
-    </section>
+    </List>
   );
 }
 

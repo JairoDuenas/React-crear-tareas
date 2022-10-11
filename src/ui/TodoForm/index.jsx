@@ -25,8 +25,8 @@ function TodoForm(props) {
         marginTop: '20px',
         marginBottom: '20px',
         borderRadius: '30px',
-        width: '95%',
-        height: '50vw'
+        width: '100%',
+        height: '14rem'
       }}
     >
       <Typography
