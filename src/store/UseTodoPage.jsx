@@ -1,12 +1,12 @@
-import React from 'react'
-import { useLocation, useParams } from 'react-router-dom';
-import { TodoForm } from '../../ui/TodoForm';
-import { useTodos } from '../useTodos';
-import BorderColorIcon from '@mui/icons-material/BorderColor';
-import { TodosLoading } from '../../ui/TodosLoading';
+import React from "react";
+import { useLocation, useParams } from "react-router-dom";
+import { TodoForm } from "../ui/TodoForm";
+import { useTodos } from "../useTodos";
+import BorderColorIcon from "@mui/icons-material/BorderColor";
+import { TodosLoading } from "../ui/TodosLoading";
 
 export default function EditTodoPage() {
-  const location = useLocation()
+  const location = useLocation();
   const params = useParams();
   const id = Number(params.id);
 
@@ -19,7 +19,7 @@ export default function EditTodoPage() {
   if (location.states?.todo) {
     todoText = location.states.todo.text;
   } else if (loading) {
-    return (<TodosLoading />)
+    return <TodosLoading />;
   } else {
     const todo = getTodo(id);
     todoText = todo.text;
@@ -32,6 +32,5 @@ export default function EditTodoPage() {
       submitIcon={<BorderColorIcon />}
       submitEvent={(newText) => editTodo(id, newText)}
     />
-  )
+  );
 }
-
