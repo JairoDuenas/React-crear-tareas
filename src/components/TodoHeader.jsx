@@ -15,8 +15,8 @@ export function TodoHeader({ children, loading }) {
 }
 
 const Header = styled.header`
-  background: rgba(38, 41, 41, 0.95);
-  border-bottom: 1px solid var(--border);
+  background: rgba(2, 6, 23, 0.7);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
   backdrop-filter: blur(16px);
   position: sticky;
   top: 0;
@@ -24,9 +24,9 @@ const Header = styled.header`
 `;
 
 const HeaderInner = styled.div`
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 24px 32px;
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -42,7 +42,7 @@ const BrandText = styled.h1`
   font-family: var(--font-display);
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
 `;
 

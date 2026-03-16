@@ -13,7 +13,6 @@ import {
   TodosError,
 } from "../components/EmptyLoadingError";
 import styled from "styled-components";
-import { GlobalStyles } from "../styles/GlobalStyles";
 
 export function HomeTemplate() {
   const navigate = useNavigate();
@@ -33,7 +32,6 @@ export function HomeTemplate() {
 
   return (
     <>
-      <GlobalStyles />
       <TodoHeader loading={loading}>
         <TodoCounter totalTodos={totalTodos} completedTodos={completedTodos} />
         <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
@@ -74,10 +72,11 @@ export function HomeTemplate() {
 
 const EmptySearch = styled.p`
   text-align: center;
-  padding: 48px 32px;
-  font-size: 11px;
-  letter-spacing: 2px;
+  padding: 40px 32px;
+  font-size: 12px;
+  letter-spacing: 3px;
   color: var(--dim);
+  text-transform: uppercase;
 `;
 
 const Query = styled.span`

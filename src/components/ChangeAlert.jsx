@@ -33,15 +33,18 @@ const Overlay = styled.div`
 `;
 
 const Alert = styled.div`
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  padding: 24px 32px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 20px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   text-align: center;
   min-width: 280px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  backdrop-filter: blur(16px);
 `;
 
 const AlertIcon = styled.span`
@@ -63,19 +66,23 @@ const AlertText = styled.p`
 `;
 
 const SyncBtn = styled.button`
-  background: var(--fg);
+  background: var(--accent);
   border: none;
-  color: var(--bg);
-  font-size: 10px;
+  color: #020617;
+  font-size: 11px;
   letter-spacing: 3px;
-  padding: 10px 24px;
+  padding: 10px 26px;
+  border-radius: 999px;
   transition:
-    background 0.2s,
-    color 0.2s;
+    background 0.18s ease-out,
+    color 0.18s ease-out,
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out;
 
   &:hover {
-    background: transparent;
-    color: var(--fg);
-    border: 1px solid var(--fg);
+    background: #4f46e5;
+    color: #e5e7eb;
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.55);
+    transform: translateY(-1px);
   }
 `;

@@ -32,20 +32,26 @@ const SearchIcon = styled.span`
 
 const Input = styled.input`
   width: 100%;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.35);
   color: var(--fg);
-  font-size: 11px;
-  letter-spacing: 2px;
-  padding: 12px 40px 12px 40px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  padding: 12px 44px 12px 42px;
   outline: none;
-  transition: border-color 0.2s;
+  transition:
+    border-color 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    background 0.18s ease-out;
+  border-radius: 999px;
 
   &::placeholder {
     color: var(--dim);
   }
   &:focus {
-    border-color: var(--fg);
+    border-color: rgba(129, 140, 248, 0.9);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+    background: rgba(15, 23, 42, 0.82);
   }
 `;
 
@@ -55,7 +61,7 @@ const ClearBtn = styled.button`
   background: none;
   border: none;
   color: var(--dim);
-  font-size: 11px;
+  font-size: 12px;
   padding: 0;
   transition: color 0.2s;
   &:hover {

@@ -15,6 +15,11 @@ const Counter = styled.div`
   display: flex;
   align-items: baseline;
   gap: 6px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+  width: fit-content;
 `;
 
 const Num = styled.span`
@@ -26,7 +31,7 @@ const Num = styled.span`
 
 const Sep = styled.span`
   font-size: 18px;
-  color: var(--border);
+  color: rgba(148, 163, 184, 0.5);
 `;
 
 const Total = styled.span`

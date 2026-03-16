@@ -28,10 +28,10 @@ export function TodoList({
 }
 
 const List = styled.ul`
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 32px 32px 120px;
+  padding: 20px 20px 140px;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 12px;
 `;
